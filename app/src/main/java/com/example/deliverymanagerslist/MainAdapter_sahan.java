@@ -28,7 +28,7 @@ import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.MainModel_sahan, MainAdapter_sahan.myViewHolder> {
+public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.deliverymanagerslist.MainModel_sahan, MainAdapter_sahan.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -36,7 +36,7 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
      *
      * @param options
      */
-    public MainAdapter_sahan(@NonNull FirebaseRecyclerOptions<com.example.mad.MainModel_sahan> options) {
+    public MainAdapter_sahan(@NonNull FirebaseRecyclerOptions<com.example.deliverymanagerslist.MainModel_sahan> options) {
         super(options);
     }
 
@@ -45,7 +45,7 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
 //    }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView")final int position, @NonNull com.example.mad.MainModel_sahan model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView")final int position, @NonNull com.example.deliverymanagerslist.MainModel_sahan model) {
         holder.name.setText(model.getName());
         holder.location.setText(model.getLocation());
         holder.contactno.setText(model.getContactno());
@@ -62,7 +62,7 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
             @Override
             public void onClick(View v) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.update_popup))
+                        .setContentHolder(new ViewHolder(R.layout.update_popup_sahan))
                         .setExpanded(true,1200)
                         .create();
 
@@ -70,12 +70,12 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
 
                 View view = dialogPlus.getHolderView();
 
-                EditText name = view.findViewById(R.id.txtName);
-                EditText location = view.findViewById(R.id.txtLocation);
-                EditText contactno = view.findViewById(R.id.txtContactno);
-                EditText pic = view.findViewById(R.id.txtImageUrl);
+                EditText name = view.findViewById(R.id.txtName_sahan);
+                EditText location = view.findViewById(R.id.txtLocation_sahan);
+                EditText contactno = view.findViewById(R.id.txtContactno_sahan);
+                EditText pic = view.findViewById(R.id.txtImageUrl_sahan);
 
-                Button btnUpdate = view.findViewById(R.id.btnUpdate);
+                Button btnUpdate = view.findViewById(R.id.btnUpdate_sahan);
 
                 name.setText(model.getName());
                 location.setText(model.getLocation());
@@ -149,7 +149,7 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_item_sahan,parent,false);
         return new myViewHolder(view);
     }
 
@@ -164,13 +164,13 @@ public class MainAdapter_sahan extends FirebaseRecyclerAdapter<com.example.mad.M
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            img = (CircleImageView)itemView.findViewById(R.id.img1);
-            name = (TextView)itemView.findViewById(R.id.nametext);
-            location = (TextView)itemView.findViewById(R.id.locationtext);
-            contactno = (TextView)itemView.findViewById(R.id.contactnotext);
+            img = (CircleImageView)itemView.findViewById(R.id.img1_sahan);
+            name = (TextView)itemView.findViewById(R.id.nametext_sahan);
+            location = (TextView)itemView.findViewById(R.id.locationtext_sahan);
+            contactno = (TextView)itemView.findViewById(R.id.contactnotext_sahan);
 
-            btnEdit = (Button)itemView.findViewById(R.id.btnEdit);
-            btnDelete = (Button)itemView.findViewById(R.id.btnDelete);
+            btnEdit = (Button)itemView.findViewById(R.id.btnEdit_sahan);
+            btnDelete = (Button)itemView.findViewById(R.id.btnDelete_sahan);
 
 
         }

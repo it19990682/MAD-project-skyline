@@ -25,20 +25,20 @@ public class MainActivity_sahan extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_sahan);
 
-        recyclerView = (RecyclerView)findViewById(R.id.rv);
+        recyclerView = (RecyclerView)findViewById(R.id.rv_sahan);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<com.example.mad.MainModel_sahan> options =
-                new FirebaseRecyclerOptions.Builder<com.example.mad.MainModel_sahan>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("supplier"), com.example.mad.MainModel_sahan.class)
+        FirebaseRecyclerOptions<com.example.deliverymanagerslist.MainModel_sahan> options =
+                new FirebaseRecyclerOptions.Builder<com.example.deliverymanagerslist.MainModel_sahan>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("supplier"), com.example.deliverymanagerslist.MainModel_sahan.class)
                         .build();
 
         mainAdapter = new com.example.deliverymanagerslist.MainAdapter_sahan(options);
         recyclerView.setAdapter(mainAdapter);
 
-        floatingActionButton= (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        floatingActionButton= (FloatingActionButton) findViewById(R.id.floatingActionButton_sahan);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,8 +63,8 @@ public class MainActivity_sahan extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.search,menu);
-        MenuItem item = menu.findItem(R.id.search);
+        getMenuInflater().inflate(R.menu.search_sahan,menu);
+        MenuItem item = menu.findItem(R.id.search_sahan);
         SearchView searchView = (SearchView)item.getActionView();
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -87,9 +87,9 @@ public class MainActivity_sahan extends AppCompatActivity {
     private void txtSearch(String str)
     {
 
-        FirebaseRecyclerOptions<com.example.mad.MainModel_sahan> options =
-                new FirebaseRecyclerOptions.Builder<com.example.mad.MainModel_sahan>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("supplier").orderByChild("name").startAt(str).endAt(str+"~"), com.example.mad.MainModel_sahan.class)
+        FirebaseRecyclerOptions<com.example.deliverymanagerslist.MainModel_sahan> options =
+                new FirebaseRecyclerOptions.Builder<com.example.deliverymanagerslist.MainModel_sahan>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("supplier").orderByChild("name").startAt(str).endAt(str+"~"), com.example.deliverymanagerslist.MainModel_sahan.class)
                         .build();
 
         mainAdapter = new com.example.deliverymanagerslist.MainAdapter_sahan(options);
