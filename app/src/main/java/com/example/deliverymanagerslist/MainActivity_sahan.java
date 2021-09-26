@@ -1,5 +1,5 @@
 package com.example.deliverymanagerslist;
-
+//pachage iports
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
