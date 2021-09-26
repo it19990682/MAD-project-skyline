@@ -1,6 +1,5 @@
 package com.example.deliverymanagerslist;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
@@ -28,7 +27,7 @@ import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.myViewHolder> {
+public class MainAdapter_maxi extends FirebaseRecyclerAdapter<MainModel_maxi, MainAdapter_maxi.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -36,12 +35,12 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
      *
      * @param options
      */
-    public MainAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
+    public MainAdapter_maxi(@NonNull FirebaseRecyclerOptions<MainModel_maxi> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder,final int position, @NonNull MainModel model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder,final int position, @NonNull MainModel_maxi model) {
 
         holder.name.setText(model.getName());
         holder.company.setText(model.getCompany());

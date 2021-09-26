@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AddActivity extends AppCompatActivity {
+public class AddActivity_maxi extends AppCompatActivity {
 
     EditText name,company,tel,date,image;
     Button btnAdd,btnBack;
@@ -67,13 +67,13 @@ private void insertData()
             .addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(AddActivity.this, "Data Inserted Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddActivity_maxi.this, "Data Inserted Successfully", Toast.LENGTH_SHORT).show();
                 }
             })
             .addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(AddActivity.this, "Error while inserction", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddActivity_maxi.this, "Error while inserction", Toast.LENGTH_SHORT).show();
 
                 }
             });

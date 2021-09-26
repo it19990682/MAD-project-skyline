@@ -15,10 +15,10 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_maxi extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    MainAdapter mainAdapter;
+    MainAdapter_maxi mainAdapterMaxi;
 
     FloatingActionButton floatingActionButton;
     @Override
@@ -29,19 +29,19 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<MainModel> options =
-                new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("manager"), MainModel.class)
+        FirebaseRecyclerOptions<MainModel_maxi> options =
+                new FirebaseRecyclerOptions.Builder<MainModel_maxi>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("manager"), MainModel_maxi.class)
                         .build();
 
-        mainAdapter = new MainAdapter(options);
-        recyclerView.setAdapter(mainAdapter);
+        mainAdapterMaxi = new MainAdapter_maxi(options);
+        recyclerView.setAdapter(mainAdapterMaxi);
 
         floatingActionButton = (FloatingActionButton)findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startActivity(new Intent(getApplicationContext(),AddActivity.class));
+               startActivity(new Intent(getApplicationContext(), AddActivity_maxi.class));
             }
         });
 
@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        mainAdapter.startListening();
+        mainAdapterMaxi.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mainAdapter.startListening();
+        mainAdapterMaxi.startListening();
     }
 //search item
     @Override
@@ -84,14 +84,14 @@ public class MainActivity extends AppCompatActivity {
     }
     private void txtSearch(String str){
 
-        FirebaseRecyclerOptions<MainModel> options =
-                new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("manager").orderByChild("name").startAt(str).endAt(str+"~"), MainModel.class)
+        FirebaseRecyclerOptions<MainModel_maxi> options =
+                new FirebaseRecyclerOptions.Builder<MainModel_maxi>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("manager").orderByChild("name").startAt(str).endAt(str+"~"), MainModel_maxi.class)
                         .build();
 
-        mainAdapter = new MainAdapter(options);
-        mainAdapter.startListening();
-        recyclerView.setAdapter(mainAdapter);
+        mainAdapterMaxi = new MainAdapter_maxi(options);
+        mainAdapterMaxi.startListening();
+        recyclerView.setAdapter(mainAdapterMaxi);
 
 
     }

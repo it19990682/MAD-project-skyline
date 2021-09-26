@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryManagersList">
         <activity
-            android:name=".AddActivity"
+            android:name=".AddActivity_maxi"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity_maxi"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

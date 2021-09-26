@@ -1,15 +1,15 @@
 package com.example.deliverymanagerslist;
 
-public class MainModel {
+public class MainModel_maxi {
 
     String name, company, tel, date, image;
 
-    MainModel(){
+    MainModel_maxi(){
 
 
     }
 
-    public MainModel(String name, String company, String tel, String date, String image) {
+    public MainModel_maxi(String name, String company, String tel, String date, String image) {
         this.name = name;
         this.company = company;
         this.tel = tel;
