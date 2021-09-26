@@ -17,16 +17,16 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"
-            android:id="@+id/img1"
+            android:id="@+id/img1_sahan"
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"/>
 
         <TextView
-            android:id="@+id/nametext"
+            android:id="@+id/nametext_sahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/img1"
+            android:layout_toRightOf="@+id/img1_sahan"
             android:text="Supplier Name"
             android:textColor="#000"
             android:textSize="25sp"
@@ -35,29 +35,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/locationtext"
+            android:id="@+id/locationtext_sahan"
             android:text="Location"
             android:textSize="25sp"
             android:textColor="#000"
-            android:layout_toRightOf="@+id/img1"
-            android:layout_below="@id/nametext"
+            android:layout_toRightOf="@+id/img1_sahan"
+            android:layout_below="@id/nametext_sahan"
             android:layout_marginLeft="10dp"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/contactnotext"
+            android:id="@+id/contactnotext_sahan"
             android:text="Contact Number"
             android:textSize="25sp"
             android:textColor="#000"
-            android:layout_toRightOf="@+id/img1"
-            android:layout_below="@id/locationtext"
+            android:layout_toRightOf="@+id/img1_sahan"
+            android:layout_below="@id/locationtext_sahan"
             android:layout_marginLeft="10dp"
             />
 
         <LinearLayout
-            android:layout_below="@+id/contactnotext"
+            android:layout_below="@+id/contactnotext_sahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -68,7 +68,7 @@
                 android:text="Edit"
                 android:textAllCaps="false"
                 android:layout_marginRight="5dp"
-                android:id="@+id/btnEdit"/>
+                android:id="@+id/btnEdit_sahan"/>
 
             <Button
                 android:layout_width="173dp"
@@ -76,7 +76,7 @@
                 android:text="Delete"
                 android:textAllCaps="false"
                 android:layout_marginLeft="5dp"
-                android:id="@+id/btnDelete"/>
+                android:id="@+id/btnDelete_sahan"/>
 
         </LinearLayout>
 

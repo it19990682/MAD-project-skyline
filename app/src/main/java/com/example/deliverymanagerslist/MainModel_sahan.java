@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.deliverymanagerslist;
 
 public class MainModel_sahan {
 

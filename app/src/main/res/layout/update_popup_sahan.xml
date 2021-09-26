@@ -32,7 +32,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtName"/>
+        android:id="@+id/txtName_sahan"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtLocation"/>
+        android:id="@+id/txtLocation_sahan"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtContactno"/>
+        android:id="@+id/txtContactno_sahan"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtImageUrl"/>
+        android:id="@+id/txtImageUrl_sahan"/>
 
     <Button
         android:layout_width="match_parent"
@@ -99,7 +99,7 @@
         android:textAllCaps="false"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnUpdate"/>
+        android:id="@+id/btnUpdate_sahan"/>
 
 
 </LinearLayout>

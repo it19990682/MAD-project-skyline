@@ -27,8 +27,8 @@ public class AddActivity_sahan extends AppCompatActivity {
         setContentView(R.layout.activity_add);
 
         name = (EditText)findViewById(R.id.txtName);
-        location = (EditText)findViewById(R.id.txtLocation);
-        contactno = (EditText)findViewById(R.id.txtContactno);
+        location = (EditText)findViewById(R.id.txtLocation_sahan);
+        contactno = (EditText)findViewById(R.id.txtContactno_sahan);
         pic = (EditText)findViewById(R.id.txtImageUrl);
 
         btnAdd = (Button)findViewById(R.id.btnAdd);
