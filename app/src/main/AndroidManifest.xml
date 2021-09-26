@@ -12,16 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryManagersList">
         <activity
-            android:name=".AddActivity_maxi"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity_maxi"
+            android:name=".MainActivity_dash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddActivity_maxi"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_maxi"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AddActivity_sahan"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_sahan"
+            android:exported="true">
         </activity>
     </application>
 
