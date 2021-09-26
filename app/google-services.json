@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "607815335355",
+    "firebase_url": "https://deliveryman-9d3e4-default-rtdb.firebaseio.com",
+    "project_id": "deliveryman-9d3e4",
+    "storage_bucket": "deliveryman-9d3e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607815335355:android:204f21d890e1f9c386189e",
+        "android_client_info": {
+          "package_name": "com.example.deliverymanagerslist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607815335355-h2vusg48umpo2uc9j3sqslm0ir85186h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjzI_ocyOfQx9V6_faXzIV3NhtIKrcf0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607815335355-h2vusg48umpo2uc9j3sqslm0ir85186h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
